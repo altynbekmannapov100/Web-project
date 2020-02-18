@@ -1,27 +1,70 @@
 @import 'font.css';
 
-body{
-  background-color: gray;
+body {
+   font-family: 'Open Sans';
 }
-ul,li {
-  display: block;
-  margin: 0;
-  padding: 0;
+
+ul,
+li {
+   display: block;
+   padding: 0;
+   margin: 0;
 }
-.menu-bar{
-  background-color: white;
-  color: #212121;
-  padding: 20px 0;
+
+/*Меню*/
+.menu-bar {
+   background: #fff;
+   padding: 20px 0;
+   color: #212121;
 }
-.menu__item{
-  margin-left: 37px;
+
+.menu__item {
+   margin-left: 37px;
 }
+
 .menu__item a {
-  font-family: 'Open Sans Semibold';
+   font-family: 'Open Sans Semibold';
+   font-size: 20px;
+   color: #212121;
+}
+
+.menu__item a:hover {
+   text-decoration: none;
+   color: #868686;
+}
+
+/*Шапка*/
+.header {
+   color: white;
+   text-align: center;
+   padding: 180px 0;
+   background-size: cover;
+   background-position: 0 100%;
+   background-image: url(../img/header.png);
+}
+.header__title{
+  font-size: 55px;
+}
+.header__text{
   font-size: 20px;
-  color: #212121;
-  }
-.menu__item a:hover{
-  text-decoration: none;
-  color: aqua;
+  margin-bottom: 100px;
+}
+.button{
+  padding: 10px 25px;
+  margin: 0 10px;
+  color: white;
+  transition: 0.13s;
+}
+.button_empty{
+  background-color: transparent;
+  border: 2px solid white;
+}
+.button_full{
+  background-color: #00897b;
+  border: 2px solid #00897b;
+}
+.button_empty:hover,
+.button_full:hover{
+  border: 2px dotted #fff;
+  background-color: #044d45;
 }
