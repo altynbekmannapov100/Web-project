@@ -50,24 +50,19 @@ li {
   margin-bottom: 100px;
 }
 .button{
+ cursor: pointer;
   padding: 10px 25px;
   margin: 0 10px;
   color: white;
   transition: 0.13s;
+  background: #00897b;
+  border: 2px solid #00897b;
 }
-.button_empty{
+.button:hover{
   background-color: transparent;
   border: 2px solid white;
 }
-.button_full{
-  background-color: #00897b;
-  border: 2px solid #00897b;
-}
-.button_empty:hover,
-.button_full:hover{
-  border: 2px dotted #fff;
-  background-color: #044d45;
-}
+
 /*О нас*/
 .about{
    padding-top: 120px;
