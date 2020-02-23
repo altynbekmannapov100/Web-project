@@ -146,7 +146,8 @@ li {
    padding-bottom: 135px;
    text-align: center;
 }
-.portfolio button:hover{
+.portfolio button:hover,
+.focused{
    color: black;
    background: transparent;
    border: 2px solid #00897b;

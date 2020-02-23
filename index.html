@@ -153,34 +153,72 @@
   <!--Services end -->
 
   <!--Portfolio -->
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xl-8">
-          <h2 class="about__title">Latest Works</h2>
-          <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-          <button class="button" filter="all">ALL</button>
-          <button class="button" filter="wd">WEB DESIGN</button>
-          <button class="button" filter="ud">UI/UX DESIGN</button>
-          <button class="button" filter="moc">MOCKUPS</button>
-        </div>
-      </div>
-      <div class="row filter">
-         <div filter="wd" class="col-xl-4"><img src="img/item1.png" alt=""></div>
-         <div  filter="moc" class="col-xl-4"><img src="img/item2.png" alt=""></div>
-         <div filter="wd" class="col-xl-4"><img src="img/item3.png" alt=""></div>
-         <div  filter="moc"  class="col-xl-4"><img src="img/item4.png" alt=""></div>
-         <div filter="ud" class="col-xl-4"><img src="img/item5.png" alt=""></div>
-         <div filter="ud" class="col-xl-4"><img src="img/item6.png" alt=""></div>
-      </div>
-      <div class="row">
-        <div class="col-xl-12">
-          <button class="button ">VIEW ALL</button>
-        </div>
-      </div>
+       <div class="row justify-content-center">
+          <div class="col-xl-8">
+             <h2 class="about__title">Latest Works</h2>
+             <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+             <button val="on" class="button" filter="all">All</button>
+             <button val="off" class="button" filter="wd">Web design</button>
+             <button val="off" class="button" filter="ud">Ui/Ux design</button>
+             <button val="off" class="button" filter="moc">Mockups</button>
+          </div>
+       </div>
+       <div class="row filter aligh_img">
+          <div filter="wd" class="col-xl-4 col-md-6">
+             <img src="img/item1.png" alt="">
+             <div class="text">
+                <h5>Hand Watch</h5>
+                <p>Web design</p>
+             </div>
+          </div>
+          <div filter="moc" class="col-xl-4 col-md-6">
+             <img src="img/item2.png" alt="">
+             <div class="text">
+                <h5>One Day Pass</h5>
+                <p>Mockups</p>
+             </div>
+          </div>
+          <div filter="wd" class="col-xl-4 col-md-6">
+             <img src="img/item3.png" alt="">
+             <div class="text">
+                <h5>Modal T-shirt</h5>
+                <p>Web design</p>
+             </div>
+          </div>
+          <div filter="moc" class="col-xl-4 col-md-6">
+             <img src="img/item4.png" alt="">
+             <div class="text">
+                <h5>Flask</h5>
+                <p>Mockups</p>
+             </div>
+          </div>
+          <div filter="ud" class="col-xl-4 col-md-6">
+             <img src="img/item5.png" alt="">
+             <div class="text">
+                <h5>Eplemost</h5>
+                <p>Ui/Ux Design</p>
+             </div>
+          </div>
+          <div filter="ud" class="col-xl-4 col-md-6">
+             <img src="img/item6.png" alt="">
+             <div class="text">
+                <h5>The kitchens</h5>
+                <p>Ui/Ux Design</p>
+             </div>
+          </div>
+       </div>
     </div>
-  </section>
+    <div class="container">
+       <div class="row">
+          <div class="col-xl-12">
+             <button val="on" class="button" filter="all">View all</button>
+          </div>
+       </div>
+    </div>
+ </section>
   <!--Portfolio end -->
 
 
@@ -193,6 +231,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
