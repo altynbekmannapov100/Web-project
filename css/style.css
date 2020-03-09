@@ -1,4 +1,4 @@
-@import 'font.css';
+@import 'fonts.css';
 body {
     font-family: 'Open Sans';
 }
@@ -61,13 +61,13 @@ li {
     padding: 10px 25px;
     margin: 0 10px;
     color: white;
-    transition: 0.13s;
+    transition: 0.3s;
     background: #00897b;
     border: 2px solid #00897b;
 }
 
 .button:hover {
-    background-color: transparent;
+    background: transparent;
     border: 2px solid white;
 }
 
@@ -85,7 +85,6 @@ li {
 .about__title {
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 35px;
 }
 
 .about__text {
@@ -94,11 +93,11 @@ li {
     margin-bottom: 110px;
 }
 
-.about__h3 {
-    font-size: 20px;
-    font-weight: 'Open Sans Semibold';
+.about_h3 {
     margin-top: 30px;
     margin-bottom: 20px;
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
 }
 
 
@@ -212,8 +211,9 @@ div[filter]:hover .text {
 }
 
 .price {
-    background: #fff;
     transition: 0.5s;
+    background: #fff;
+    margin-bottom: 20px;
 }
 
 .price:hover {
@@ -224,20 +224,23 @@ div[filter]:hover .text {
     color: white;
     padding-top: 40px;
     padding-bottom: 65px;
+    background-image: url(../img/pricing_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     max-height: 211px;
-    background-image: url(../img/pricing_bg.png);
-    font-size: 50px;
 }
 
 .price__head p {
     font-size: 25px;
 }
 
+.price__head {
+    font-size: 50px;
+}
+
 .price__head sub {
-    font-size: 17px;
     vertical-align: middle;
+    font-size: 17px;
 }
 
 .price__head sup {
@@ -264,21 +267,24 @@ div[filter]:hover .text {
 
 .price__footer button {
     cursor: pointer;
-    font-size: 20px;
-    background: transparent;
-    border: 2px solid #212121;
-    height: 60px;
-    width: 180px;
     color: #212121;
+    background: transparent;
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+    border: 2px solid #212121;
     transition: 0.3s;
 }
 
 .price__footer button:hover {
     text-transform: uppercase;
     color: white;
-    border: none;
     background: #00897b;
+    border: none;
 }
+
+
+/* Команда */
 
 .team {
     padding-top: 165px;
@@ -324,17 +330,17 @@ div[filter]:hover .text {
     color: #fff;
 }
 
-.multiple-items {
-    margin-top: 125px;
-}
-
 .team img {
     margin: 0 auto;
     max-width: 340px;
 }
 
-.dots-style {
+.multiple-items {
     margin-top: 125px;
+}
+
+.dots-style {
+    margin-top: 115px;
     display: flex;
     justify-content: center;
 }
@@ -354,7 +360,11 @@ div[filter]:hover .text {
 }
 
 
-/*Blog*/
+/*Блог*/
+
+.blog-item {
+    width: 48%;
+}
 
 .left>div:first-child {
     order: 1;
@@ -374,7 +384,6 @@ div[filter]:hover .text {
 
 .blog {
     text-align: left;
-    margin-left: 20px;
     margin-top: 60px;
 }
 
@@ -401,12 +410,6 @@ div[filter]:hover .text {
 
 .blog p {
     font-size: 15px;
-    margin-top: 30px;
-}
-
-.left,
-.right {
-    margin: 0 -40px;
 }
 
 .button_blog {
@@ -416,23 +419,30 @@ div[filter]:hover .text {
     color: white;
     font-size: 20px;
     margin-top: 125px;
-    border: none;
+    transition: 0.3s;
+    border: 2px solid #00897b;
+    cursor: pointer;
     background: #00897b;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
+.button_blog:hover {
+    background: transparent;
+    color: #000;
+}
 
-/*footer*/
+
+/*Футер*/
 
 .footer {
     padding-top: 165px;
     padding-bottom: 125px;
-    color: white;
+    color: #fff;
     background-image: url(../img/footer.png);
-    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
 }
 
 .footer .about__text {
@@ -440,20 +450,20 @@ div[filter]:hover .text {
 }
 
 .fa-map-marker-alt,
-.fa-envelope,
-.fa-phone {
-    color: #fff;
+.fa-phone,
+.fa-envelope {
     font-size: 62px;
+    color: #fff;
 }
 
 .circle {
-    background: #3949ab;
-    height: 100px;
-    width: 100px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #3949ab;
+    width: 100px;
+    height: 100px;
     margin: 0 auto 35px;
 }
 
@@ -474,7 +484,7 @@ div[filter]:hover .text {
     outline: none;
 }
 
-.form textarea {
+.footer textarea {
     margin-top: 30px;
     margin-bottom: 30px;
     resize: none;
@@ -488,11 +498,7 @@ div[filter]:hover .text {
     padding: 20px 80px;
     border-radius: 10px;
     border: none;
-    transition: 0.3s;
-}
-
-.footer button:focus {
-    outline: none;
+    transition: 0.3s
 }
 
 .footer button:hover {
@@ -507,4 +513,57 @@ div[filter]:hover .text {
 
 .form {
     margin-top: 70px;
+}
+
+
+/*Кнопка наверх*/
+
+#toTop {
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+    background: #00897b;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #000000;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+    .logo-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-icon {
+        display: block;
+        background: #00897b;
+        border: none;
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .blog {
+        margin-top: 10px;
+    }
+    .footer input,
+    .footer textarea {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/dc3606279f.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Web development </title>
+    <title>Web project </title>
 </head>
 
 <body>
+    <div id="toTop"><i class="fas fa-chevron-up"></i></div>
     <header class="menu-bar">
         <div class="container">
             <div class="row">
                 <div class="col-xl-2 logo-bar">
                     <img src="img/logo.png" alt="My Landing" class="logo">
+                    <button class="menu-icon"><i class="fas fa-bars"></i></button>
                 </div>
                 <div class="col-xl-8 ml-auto align-self-center">
                     <nav>
@@ -42,15 +44,13 @@
                 <div class="col-xl-12">
                     <h1 class="header__title">Web development project</h1>
                     <p class="header__text">Very suitable to support all web development projects</p>
-                    <button class="button ">Our services</button>
-                    <button class="button ">Hire is now</button>
+                    <button class="button">Our services</button>
+                    <button class="button">Hire is now</button>
                 </div>
             </div>
         </div>
     </header>
-
-    <!--About start-->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8">
@@ -59,27 +59,24 @@
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <img src="img/about.png" alt="">
-                    <h3 class="about__h3">Awesome Icons</h3>
-                    <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur, facilis accusantium laborum ad quas!</p>
+                    <h3 class="about_h3">Awesome Icons</h3>
+                    <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi vero molestiae et, nisi error!</p>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <img src="img/about2.png" alt="">
-                    <h3 class="about__h3">One Page</h3>
-                    <p class="about_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, accusamus eaque assumenda amet explicabo earum.</p>
+                    <h3 class="about_h3">One Page</h3>
+                    <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi vero molestiae et, nisi error!</p>
                 </div>
-                <div class="col-xl-3">
+                <div class="col-xl-3 col-md-6">
                     <img src="img/about3.png" alt="">
-                    <h3 class="about__h3">Fully Responsive</h3>
-                    <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam atque dolorum maiores repellat quas.</p>
+                    <h3 class="about_h3">Fully Responsive</h3>
+                    <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi vero molestiae et, nisi error!</p>
                 </div>
             </div>
         </div>
     </section>
-    <!--About end--3-->
-
-    <!--Services -->
     <section class="services" id="service">
         <div class="container">
             <div class="row justify-content-center">
@@ -140,9 +137,6 @@
             </div>
         </div>
     </section>
-    <!--Services end -->
-
-    <!--Portfolio -->
     <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="row justify-content-center">
@@ -208,8 +202,6 @@
             </div>
         </div>
     </section>
-    <!--Portfolio end -->
-    <!--Pricing-->
     <section class="pricing">
         <div class="container">
             <div class="row justify-content-center">
@@ -219,10 +211,10 @@
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price">
                         <div class="price__head">
-                            <p>Free Trail </p>
+                            <p>Free Trail</p>
                             <sup>$</sup> 00 <sub>per month</sub>
                         </div>
                         <div class="price__body">
@@ -230,7 +222,7 @@
                                 <li>30 Free Trail</li>
                                 <li>5 Free Projects</li>
                                 <li>PHP 5 Enabled</li>
-                                <li>24/7 Supports</li>
+                                <li>24/7 Suports</li>
                             </ul>
                         </div>
                         <div class="price__footer">
@@ -238,10 +230,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price">
                         <div class="price__head">
-                            <p>Basic </p>
+                            <p>Basic</p>
                             <sup>$</sup> 50 <sub>per month</sub>
                         </div>
                         <div class="price__body">
@@ -249,7 +241,7 @@
                                 <li>30 Free Trail</li>
                                 <li>5 Free Projects</li>
                                 <li>PHP 5 Enabled</li>
-                                <li>24/7 Supports</li>
+                                <li>24/7 Suports</li>
                             </ul>
                         </div>
                         <div class="price__footer">
@@ -257,10 +249,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price">
                         <div class="price__head">
-                            <p>Ultimates </p>
+                            <p>Ultimates</p>
                             <sup>$</sup> 99 <sub>per month</sub>
                         </div>
                         <div class="price__body">
@@ -268,7 +260,7 @@
                                 <li>30 Free Trail</li>
                                 <li>5 Free Projects</li>
                                 <li>PHP 5 Enabled</li>
-                                <li>24/7 Supports</li>
+                                <li>24/7 Suports</li>
                             </ul>
                         </div>
                         <div class="price__footer">
@@ -279,8 +271,6 @@
             </div>
         </div>
     </section>
-    <!--Pricing end-->
-    <!--team-->
     <section class="team">
         <div class="container">
             <div class="row justify-content-center">
@@ -297,32 +287,29 @@
                     <div class="icons">
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                     </div>
-
-
-
                 </div>
                 <div class="col-xl-4">
                     <img src="img/team2.png" alt="">
@@ -331,32 +318,29 @@
                     <div class="icons">
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                     </div>
-
-
-
                 </div>
                 <div class="col-xl-4">
                     <img src="img/team3.png" alt="">
@@ -365,27 +349,27 @@
                     <div class="icons">
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                     </div>
                 </div>
@@ -396,68 +380,65 @@
                     <div class="icons">
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                     </div>
                 </div>
                 <div class="col-xl-4">
-                    <img src="img/team3.png" alt="">
+                    <img src="img/team1.png" alt="">
                     <h4>John Doe</h4>
                     <p>General Manager</p>
                     <div class="icons">
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                         <a href="">
                             <span class="fa-stack fa-2x">
-                                <i class="fas fa-square fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                     </span>
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!--team end-->
-    <!--blog-->
-    <section class="services">
+    <section class="services" id="blog">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8">
@@ -465,69 +446,59 @@
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
             </div>
-            <div class="row left">
-                <div class="col-xl-6">
-                    <img src="img/blog1.png" alt="">
+            <div class="row left justify-content-between">
+                <div class="blog-item ">
+                    <img src="img/blog1.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-xl-6">
+                <div class="blog-item ">
                     <div class="blog">
                         <a href="">SEO Quis Vestibulum</a>
                         <div>
-                            <span><i class="far fa-calendar-alt"></i>
-                                14.0702017</span>
-                            <span><i class="far fa-file"></i>
-                                    Development</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia alias vitae dolores sapiente praesentium incidunt.</p>
+                            <span><i class="far fa-calendar-alt"></i> 14.07.2017</span>
+                            <span><i class="far fa-file"></i> Development</span>
                         </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum placeat mollitia, exercitationem commodi perspiciatis asperiores modi consectetur quas sequi tenetur!</p>
                     </div>
                 </div>
             </div>
-            <div class="row right">
-                <div class="col-xl-6">
-                    <img src="img/blog2.png" alt="">
+            <div class="row right justify-content-between">
+                <div class="blog-item">
+                    <img src="img/blog2.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-xl-6">
+                <div class="blog-item">
                     <div class="blog">
                         <a href="">SEO Quis Vestibulum</a>
                         <div>
-                            <span><i class="far fa-calendar-alt"></i>
-                                14.0702017</span>
-                            <span><i class="far fa-file"></i>
-                                    Development</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia alias vitae dolores sapiente praesentium incidunt.</p>
+                            <span><i class="far fa-calendar-alt"></i> 14.07.2017</span>
+                            <span><i class="far fa-file"></i> Development</span>
                         </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minima illo architecto ea, debitis, accusantium et obcaecati corrupti neque magnam voluptas nulla quae reprehenderit. Quos porro explicabo illum libero autem!</p>
                     </div>
                 </div>
             </div>
-            <div class="row left">
-                <div class="col-xl-6">
-                    <img src="img/blog3.png" alt="">
+            <div class="row left justify-content-between">
+                <div class="blog-item">
+                    <img src="img/blog3.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-xl-6">
+                <div class="blog-item">
                     <div class="blog">
                         <a href="">SEO Quis Vestibulum</a>
                         <div>
-                            <span><i class="far fa-calendar-alt"></i>
-                                14.0702017</span>
-                            <span><i class="far fa-file"></i>
-                                    Development</span>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia alias vitae dolores sapiente praesentium incidunt.</p>
+                            <span><i class="far fa-calendar-alt"></i> 14.07.2017</span>
+                            <span><i class="far fa-file"></i> Development</span>
                         </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minima illo architecto ea, debitis, accusantium et obcaecati corrupti neque magnam voluptas nulla quae reprehenderit. Quos porro explicabo illum libero autem!</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-12"><button class="button_blog">
-                    More Viev
-                </button>
+                <div class="col-xl-12">
+                    <button class="button_blog">More View</button>
                 </div>
             </div>
         </div>
     </section>
-
-    <!--blog end-->
-    <!--Footer-->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8">
@@ -535,53 +506,36 @@
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
             </div>
-            <div class="row  justify-content-around">
-                <div class="col-xl-3">
-                    <div class="circle">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
+            <div class="row justify-content-around">
+                <div class="col-xl-3 col-md-6">
+                    <div class="circle"><i class="fas fa-map-marker-alt"></i></div>
                     <p>Nobinagar savar,<br>Dhaka Bangladesh</p>
                 </div>
-                <div class="col-xl-3">
-                    <div class="circle">
-                        <i class="fas fa-phone fa-rotate-90"></i>
-                    </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="circle"><i class="fas fa-phone fa-rotate-90"></i></div>
                     <p>+8801743331996<br>+8801928737807</p>
                 </div>
-                <div class="col-xl-3">
-                    <div class="circle">
-                        <i class="fas fa-envelope"></i>
-                    </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="circle"><i class="fas fa-envelope"></i></div>
                     <p>quickmasud@gmail.com<br>quickmasud@yahoo.com</p>
                 </div>
             </div>
-            <div class="row form justify-content-center ">
-                <div class="col-xl-5">
-                    <input type="text" placeholder="Your NAME">
-                </div>
-                <div class="col-xl-5">
-                    <input type="email" placeholder="Your Email">
-                </div>
-                <div class="col-xl-10">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Write Massage"></textarea>
-                </div>
-                <div class="col-xl-2 offset-xl-7">
-                    <button>Send</button>
-                </div>
+            <div class="row justify-content-center form">
+                <div class="col-xl-5"><input type="text" placeholder="Your Name"></div>
+                <div class="col-xl-5"><input type="email" placeholder="Your Email"></div>
+                <div class="col-xl-10"><textarea name="" id="" cols="30" rows="10" placeholder="Write Message"></textarea></div>
+                <div class="col-xl-2 offset-xl-7"><button>Send</button></div>
             </div>
         </div>
     </footer>
-    <footer class="rules">
-        All rights Reserved © 2020
-    </footer>
-    <!--Footer end-->
-
-
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <footer class="rules">All rights Reserved © 2019`</footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
