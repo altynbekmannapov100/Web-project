@@ -75,3 +75,7 @@ $(document).ready(function() {
         }, 800);
     });
 });
+var btn = document.querySelectorAll('button');
+for (var i = 0; i < btn.length; i++) {
+    btn[i].style.outline = 'none';
+}
